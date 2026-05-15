@@ -13,4 +13,5 @@ build/
 !.env.example
 models/*.joblib
 models/*.json
+models/*.md
 !models/.gitkeep

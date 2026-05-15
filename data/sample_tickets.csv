@@ -1,0 +1,31 @@
+text,category
+"I want to know the price of your monthly plan",sales
+"Can you send me information about your services?",sales
+"I am interested in buying a subscription",sales
+"Do you offer discounts for small businesses?",sales
+"Please explain the difference between your packages",sales
+"The app crashes when I try to upload a file",technical_support
+"I cannot log in with my password",technical_support
+"The dashboard is not loading today",technical_support
+"I get an error when I submit the form",technical_support
+"The system is running very slowly after the update",technical_support
+"I was charged twice this month",billing
+"Can you send me the invoice for my last payment?",billing
+"My payment failed but the money left my account",billing
+"I need to update the billing email",billing
+"Please explain this charge on my invoice",billing
+"I want to file a complaint about the service",complaint
+"The support response was not helpful",complaint
+"I am unhappy with the delay in my order",complaint
+"This issue has happened several times and nobody fixed it",complaint
+"I want to report a bad customer experience",complaint
+"I need to schedule an appointment for tomorrow",appointment
+"Can I book a meeting for Friday morning?",appointment
+"Please move my appointment to next week",appointment
+"I need to cancel my appointment today",appointment
+"What times are available for a consultation?",appointment
+"Thank you for the information",other
+"Can you tell me where your office is located?",other
+"I have a general question about my account",other
+"Please call me back when possible",other
+"Where can I find your opening hours?",other

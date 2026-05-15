@@ -142,6 +142,7 @@ pytest
 - [Model Card](docs/model_card.md)
 - [Dataset Notes](docs/dataset.md)
 - [API Examples](docs/api_examples.md)
+- [Docker](docs/docker.md)
 
 ## Limitations
 
@@ -156,5 +157,4 @@ pytest
 - Add confusion matrix reporting.
 - Improve model evaluation with a larger dataset.
 - Compare the baseline against embeddings or an LLM-based classifier.
-- Add Docker support.
 - Add GitHub Actions for automated tests.

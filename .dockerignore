@@ -1,0 +1,14 @@
+.git
+.github
+.pytest_cache
+__pycache__
+*.pyc
+.venv
+venv
+dist
+build
+*.egg-info
+models/*.joblib
+models/*.json
+models/*.md
+tmp_batch

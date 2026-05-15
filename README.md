@@ -34,6 +34,10 @@ The first version uses a classic text classification baseline:
 
 This approach is easy to understand, fast to run locally, and appropriate for a small portfolio project.
 
+## Status
+
+Version `v0.1.0` is the first portfolio-ready version. It includes a reproducible training script, model evaluation outputs, FastAPI prediction endpoint, batch prediction CLI, Docker support, tests, and GitHub Actions.
+
 ## Project Structure
 
 ```text
@@ -153,8 +157,9 @@ pytest
 
 ## Next Steps
 
+These are possible future improvements, not requirements for the first portfolio version.
+
 - Expand the dataset with more realistic examples.
-- Add confusion matrix reporting.
 - Improve model evaluation with a larger dataset.
 - Compare the baseline against embeddings or an LLM-based classifier.
-- Add GitHub Actions for automated tests.
+- Add a deployed demo endpoint if cost and maintenance make sense.

@@ -113,6 +113,24 @@ Example response:
 
 The exact probabilities may change when the dataset or model changes.
 
+## Batch Predictions
+
+Create a CSV with a `text` column:
+
+```csv
+text
+I was charged twice this month
+Can I book a meeting for Friday?
+```
+
+Run batch prediction:
+
+```bash
+predict-ticket-batch --input tickets.csv --output predictions.csv
+```
+
+The output CSV includes the original text, predicted category, confidence, and per-class probabilities.
+
 ## Tests
 
 ```bash

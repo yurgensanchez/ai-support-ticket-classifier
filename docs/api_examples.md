@@ -50,3 +50,11 @@ curl -X POST "http://127.0.0.1:8000/predict" ^
 ```
 
 The API returns `422` because the message is shorter than the minimum accepted length.
+
+## Batch Prediction CLI
+
+```bash
+predict-ticket-batch --input tickets.csv --output predictions.csv
+```
+
+The input CSV must contain a `text` column.

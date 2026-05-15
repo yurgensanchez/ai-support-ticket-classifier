@@ -29,6 +29,7 @@ dev = [
 
 [project.scripts]
 train-ticket-classifier = "ticket_classifier.ml.train:main"
+predict-ticket-batch = "ticket_classifier.cli:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]

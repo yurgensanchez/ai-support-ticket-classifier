@@ -72,6 +72,5 @@ This model should not be used to hide or deprioritize customer complaints. If us
 
 - Add more labeled examples per category.
 - Use a real public dataset if appropriate.
-- Add confusion matrix output.
 - Compare the baseline with embeddings or transformer-based classifiers.
 - Add monitoring for low-confidence predictions.

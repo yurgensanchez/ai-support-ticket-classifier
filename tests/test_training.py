@@ -4,7 +4,7 @@ import pandas as pd
 import pytest
 
 from ticket_classifier.ml.preprocessing import normalize_text
-from ticket_classifier.ml.train import build_pipeline, load_dataset, train_model
+from ticket_classifier.ml.train import build_pipeline, format_metrics_summary, load_dataset, train_model
 
 
 def test_normalize_text_strips_lowercases_and_collapses_spaces() -> None:
@@ -76,6 +76,7 @@ def test_train_model_returns_metrics() -> None:
     assert hasattr(model, "predict")
     assert "accuracy" in metrics
     assert "f1_weighted" in metrics
+    assert "confusion_matrix" in metrics
     assert sorted(metrics["labels"]) == [
         "appointment",
         "billing",
@@ -84,3 +85,22 @@ def test_train_model_returns_metrics() -> None:
         "sales",
         "technical_support",
     ]
+
+
+def test_format_metrics_summary_includes_confusion_matrix() -> None:
+    metrics = {
+        "accuracy": 0.5,
+        "precision_weighted": 0.4,
+        "recall_weighted": 0.5,
+        "f1_weighted": 0.45,
+        "train_rows": 20,
+        "test_rows": 10,
+        "labels": ["billing", "sales"],
+        "confusion_matrix": [[2, 1], [1, 3]],
+    }
+
+    summary = format_metrics_summary(metrics)
+
+    assert "# Model Evaluation Summary" in summary
+    assert "| Actual \\ Predicted | billing | sales |" in summary
+    assert "| billing | 2 | 1 |" in summary

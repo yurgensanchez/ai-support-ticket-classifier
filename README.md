@@ -71,6 +71,7 @@ This creates:
 ```text
 models/ticket_classifier.joblib
 models/metrics.json
+models/metrics_summary.md
 ```
 
 ## Run the API
@@ -135,6 +136,7 @@ pytest
 
 - Expand the dataset with more realistic examples.
 - Add confusion matrix reporting.
+- Improve model evaluation with a larger dataset.
 - Compare the baseline against embeddings or an LLM-based classifier.
 - Add Docker support.
 - Add GitHub Actions for automated tests.

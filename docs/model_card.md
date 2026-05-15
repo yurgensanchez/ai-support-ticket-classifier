@@ -52,6 +52,9 @@ The reported metrics include:
 - weighted recall
 - weighted F1
 - per-class classification report
+- confusion matrix
+
+Training also writes a human-readable summary to `models/metrics_summary.md`.
 
 ## Known Limitations
 
